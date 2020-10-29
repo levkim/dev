@@ -3,8 +3,10 @@ $tdbc-typography-variants: h1, h2, h3, h4;
 @each $type in $tdbc-typography-variants {
   #{$type},
   .tdbc-#{$type} {
+    font-family: $tdbc-font-mono;
     font-weight: $tdbc-strong-font-weight;
     line-height: 1.15;
+    color: tdbc-color("dark");
     margin-bottom: 0.65em;
   }
 }
@@ -76,10 +78,11 @@ code:not([class*="language"]) {
   padding: 0.15em;
   background-color: tdbc-color("light");
   color: tdbc-color("gray");
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: $tdbc-font-mono;
   border: 1px solid scale-color(tdbc-color("gray"), $lightness: 50%);
   border-radius: 2px;
-  font-size: 0.75em;
+  font-size: 0.875em;
+  font-weight: 500;
   line-height: 1.1;
 }
 
