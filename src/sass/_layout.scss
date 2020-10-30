@@ -1,3 +1,16 @@
+// scrollbar styling
+::-webkit-scrollbar {
+  width: 24px;
+  height: 24px;
+  background-color: tdbc-color("dark");
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: tdbc-color("primary");
+  border: 6px solid tdbc-color("dark");
+  border-radius: 10px;
+}
+
 // stylelint-disable-next-line selector-max-type
 body {
   display: flex;
